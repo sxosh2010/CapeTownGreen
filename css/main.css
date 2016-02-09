@@ -160,6 +160,8 @@ body {
   padding: 10em 1em 1em 1em;
 }
 
+/*road*/
+
 .road {
   background-color: #46454b;
   height: 4em;
@@ -175,13 +177,16 @@ body {
   border-top: dashed 3px #fff;
 }
 
+/*robot*/
+
 .robot {
   content: "";
   width: 1em;
   height: 3em;
   background-color: #000;
   top: -3em;
-  position: relative;
+  position: absolute;
+  float: left;
 }
 
 .robot:before {
@@ -213,11 +218,89 @@ body {
   color: #3dbd5d;
 }
 
+/*positioning*/
 
+/*fours*/
 
+.one-of-four {
+  left: 25%;
+}
 
+.two-of-four {
+  left: 50%;
+}
 
+.three-of-four {
+  left: 75%;
+}
 
+.four-of-four {
+  right: 0;
+}
+
+/*sixes*/
+
+.one-of-six {
+  left: 16.6666667%;
+}
+
+.two-of-six {
+  left: 33.3333333%;
+}
+
+.three-of-six {
+  left: 50%;
+}
+
+.four-of-six {
+  left: 66.6666667%;
+}
+
+.five-of-six {
+  left: 83.3333333%;
+}
+
+.six-of-six {
+  right: 0;
+}
+
+/*nines*/
+
+.one-of-nine {
+  left: 11.1111111%;
+}
+
+.two-of-nine {
+  left: 22.2222222%;
+}
+
+.three-of-nine {
+  left: 33.3333333%;
+}
+
+.four-of-nine {
+  left: 44.4444444%;
+}
+
+.five-of-nine {
+  left: 55.5555556%;
+}
+
+.six-of-nine {
+  left: 66.6666667%;
+}
+
+.seven-of-nine { /* resistance is futile */
+  left: 77.7777778%;
+}
+
+.eight-of-nine {
+  left: 88.8888889%;
+}
+
+.nine-of-nine {
+  right: 0;
+}
 
 
 
