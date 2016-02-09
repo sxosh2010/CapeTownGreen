@@ -154,7 +154,26 @@ nav a:hover {
    Author's custom styles
    ========================================================================== */
 
+/*Crazy Taxi*/
 
+body {
+  padding: 5em 1em 1em 1em;
+}
+
+.road {
+  background-color: #46454b;
+  height: 4em;
+  position: relative;
+}
+
+.road:before {
+  content: "";
+  position: absolute;
+  top: 2em;
+  left: 0;
+  right: 0;
+  border-top: dashed 3px #fff;
+}
 
 
 
