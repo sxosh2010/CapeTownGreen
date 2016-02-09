@@ -157,7 +157,7 @@ nav a:hover {
 /*Crazy Taxi*/
 
 body {
-  padding: 5em 1em 1em 1em;
+  padding: 10em 1em 1em 1em;
 }
 
 .road {
@@ -175,8 +175,43 @@ body {
   border-top: dashed 3px #fff;
 }
 
+.robot {
+  content: "";
+  width: 1em;
+  height: 3em;
+  background-color: #000;
+  top: -3em;
+  position: relative;
+}
 
+.robot:before {
+  content: "";
+  position: absolute;
+  top: -5em;
+  background-color: #46454b;
+  width: 2em;
+  height: 5em;
+  left: -0.5em;
+}
 
+.lights {
+  font-size: 5em;
+  position: absolute;
+  top: -1em;
+  left: -0.09em;
+}
+
+.stop {
+  color: #f43530;
+}
+
+.slowdown {
+  color: #f7772c;
+}
+
+.go {
+  color: #3dbd5d;
+}
 
 
 
