@@ -199,13 +199,6 @@ body {
   left: -0.5em;
 }
 
-.lights {
-  font-size: 5em;
-  position: absolute;
-  top: -1em;
-  left: -0.09em;
-}
-
 .stop {
   color: #f43530;
 }
@@ -216,6 +209,30 @@ body {
 
 .go {
   color: #3dbd5d;
+}
+
+.lights-go,
+.lights-slowdown,
+.lights-stop {
+  font-size: 5em;
+  position: absolute;
+  top: -1em;
+  left: -0.09em;
+}
+
+.lights-stop .slowdown,
+.lights-stop .go {
+  opacity: 0.4;
+}
+
+.lights-slowdown .stop,
+.lights-slowdown .go {
+  opacity: 0.4;
+}
+
+.lights-go .slowdown,
+.lights-go .stop {
+  opacity: 0.4;
 }
 
 /*positioning*/
