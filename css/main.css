@@ -157,7 +157,7 @@ nav a:hover {
 /*Crazy Taxi*/
 
 body {
-  padding: 10em 1em 1em 1em;
+  padding: 10em 4em 1em 4em;
 }
 
 /*road*/
@@ -302,6 +302,145 @@ body {
   right: 0;
 }
 
+/*taxi*/
+
+.taxi {
+  width: 7%;
+  height: 3em;
+  background-color: #fff;
+  border: solid 2px #35342f;
+  border-radius: 0.25em 1em 0.25em 0.25em;
+  position: absolute;
+  top: -2em;
+  /*left: 0.5em;*/
+}
+
+.taxi:before {
+  content: "";
+  background-color: #35342f;
+  border-radius: 0.25em 1em 0.25em 0.25em;
+  position: absolute;
+  right: 0.1em;
+  top: 0.1em;
+  left: 0.1em;
+  bottom: 1.5em;
+}
+
+.taxi:after {
+  content: "";
+  background-color: #ffeb00;
+  left: 0;
+  right: 0;
+  height: 5px;
+  top: 2em;
+  position: absolute;
+}
+
+.wheels {
+  position: relative;
+}
+
+.wheels:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  bottom: -0.65em;
+  color: black;
+  font-size: 6em;
+}
+
+.wheels:after {
+  content: "•";
+  position: absolute;
+  right: 0;
+  bottom: -0.65em;
+  color: black;
+  font-size: 6em;
+}
+
+/*taxi slots*/
+
+/*fours*/
+
+.slot-one-of-four {
+  left: 15%;
+}
+
+.slot-two-of-four {
+  left: 40%;
+}
+
+.slot-three-of-four {
+  left: 65%;
+}
+
+.slot-four-of-four {
+  right: 5%;
+}
+
+/*sixes*/
+
+.slot-one-of-six {
+  left: 8%;
+}
+
+.slot-two-of-six {
+  left: 24%;
+}
+
+.slot-three-of-six {
+  left: 41%;
+}
+
+.slot-four-of-six {
+  left: 58%;
+}
+
+.slot-five-of-six {
+  left: 75%;
+}
+
+.slot-six-of-six {
+  right: 2%;
+}
+
+/*nines*/
+
+.slot-one-of-nine {
+  left: 3%;
+}
+
+.slot-two-of-nine {
+  left: 14%;
+}
+
+.slot-three-of-nine {
+  left: 25%;
+}
+
+.slot-four-of-nine {
+  left: 36%;
+}
+
+.slot-five-of-nine {
+  left: 47%;
+}
+
+.slot-six-of-nine {
+  left: 58%;
+}
+
+.slot-seven-of-nine { /* resistance is futile */
+  left: 69%;
+}
+
+.slot-eight-of-nine {
+  left: 81%;
+}
+
+.slot-nine-of-nine {
+  right: 2%;
+}
 
 
 
