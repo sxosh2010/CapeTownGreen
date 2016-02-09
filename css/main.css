@@ -166,6 +166,7 @@ body {
   background-color: #46454b;
   height: 4em;
   position: relative;
+  margin-bottom: 1em;
 }
 
 .road:before {
@@ -468,7 +469,22 @@ body {
   right: 2%;
 }
 
+/*signs*/
 
+.signs {
+  position: relative;
+}
+
+.sign {
+  border: solid 2px #000;
+  padding: 0.5em;
+  position: absolute;;
+  display: inline-block;
+}
+
+.destination {
+  right: 0;
+}
 
 /* ==========================================================================
    Media Queries
