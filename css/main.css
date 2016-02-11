@@ -221,9 +221,7 @@ body {
   color: #3dbd5d;
 }
 
-.lights-go,
-.lights-slowdown,
-.lights-stop {
+.lights {
   font-size: 5em;
   position: absolute;
   top: -1em;
