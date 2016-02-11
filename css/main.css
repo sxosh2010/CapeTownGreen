@@ -383,6 +383,14 @@ body {
   font-size: 6em;
 }
 
+.passengers {
+  position: absolute;
+  top: 0;
+  left: 40%;
+  color: #fff;
+  font-size: 1.5em;
+}
+
 /*taxi slots*/
 
 /*fours*/
