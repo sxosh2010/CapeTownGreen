@@ -4,16 +4,16 @@ layout: default
 
 ## Moving the taxi forward
 
-The taxi should move forward when the forward arrow is pressed. The taxi's position is determined by a css class attached to it. There are nine classes `.one-of-six` to `.six-of-nine`. Attach the next class to the taxi elements document as the forward key is pressed.
+The taxi should move forward when the right arrow is pressed. The taxi's position is determined by a class attached to it. There are nine classes: `.one-of-six` to `.six-of-nine`. Attach the next class to the taxi elements as the forward key is pressed.
 
 The algorithm you will use to move the taxi forward is:
 
-    1. initialize a global variable (declare it outside onkeyup) called `taxiLocationCounter` to 1
-    2. when the forward key is pressed increment `taxiLocationCounter` by 1
-    3. when the back key is pressed decrement `taxiLocationCounter` by 1
-    4. make sure that the counter variable never get's bigger than 9 or less than 1
-    5. translate the counter's value into a classnames
-    6. when the forward key is pressed replace the old location class with the new location class on the taxi html element
+    1. initialize a global variable (declare it outside `onkeyup`) called `taxiLocationCounter` to 1;
+    2. when the forward key is pressed increment `taxiLocationCounter` by 1;
+    3. when the back key is pressed decrement `taxiLocationCounter` by 1;
+    4. make sure that the counter variable never get's bigger than 9 or less than 1;
+    5. translate the counter's value into class names;
+    6. when the forward key is pressed, replace the old location class with the new location class on the taxi html element.
 
 Go ahead and implement steps 1 to 4. Display the value of `taxiLocationCounter` on the screen using the `displayMessage` function.
 
@@ -33,24 +33,24 @@ parameter  | returns          |
 8          | eight-of-nine
 9          | nine-of-nine
 
-Run mocha the test.html page make sure the `createLocationClass` tests are passing.
+Open the tests.html page to make sure the `createLocationClass` tests are passing.
 
 Use the `createLocationClass` function to get the classname for the value of `taxiLocationCounter` and display it instead of the counter.
 
 ### Create moveForward function
 
-You will now use the classnames created from `taxiLocationCounter` to let the taxi move forward.
+You will now use the class names created from `taxiLocationCounter` to let the taxi move forward.
 
-Create a `moveForward` function, in the app.js file.
+Create a `moveForward` function, in the `app.js` file.
 
-Use the supplied `moveTaxi`, it takes two parameters the class and the current location and the next location class.
+Use the supplied `moveTaxi`. It takes these parameters: the class, the current location, and the next location class.
 
 The algorithm for moving the `moveTaxi` function is:
 
-* use `createLocationClass`, call it with the `taxiLocationCounter` store the result in a variable called `currentLocation`
-* increment the `taxiLocationCounter` counter by 1
-* use the `createLocationClass` call it with the `taxiLocationCounter`, store the result in a variable called `newLocation`
-* call moveTaxi with the `currentLocation` and `newLocation`
+* use `createLocationClass`, call it with `taxiLocationCounter`, store the result in a variable called `currentLocation`;
+* increment the `taxiLocationCounter` counter by 1;
+* use the `createLocationClass`, call it with the `taxiLocationCounter`, store the result in a variable called `newLocation`;
+* call moveTaxi with the `currentLocation` and `newLocation`.
 
 Use this algorithm in the `onkeydown` function, when the forward key is pressed.
 
