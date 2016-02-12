@@ -24,23 +24,15 @@ You need to install `http-server`.
 
 Install it using : `sudo npm install -g http-server`
 
-## First function
+To start the web server open a terminal window change into the CapeTownGreen folder, the route folder you cloned from github and type `http-server`.
 
-Write a function called `keyCodeName` that take in a keycode and return the name of the key that was pressed.
-It should support the up, down, left and right key codes. It should return blank for all other keyCodes.
+Open a browser and point it to `http://localhost:8080` - you should see a Taxi, a tarred road and some traffic lights.
 
-To capture keystroke we need to add an event handler (function) to the body of the html document's `onkeydown` event
+If you open `http://localhost:8080/tests.html` you should see some red text - these are failing unit tests... this indicates that some code that are required is not working as expected. As you progress through this workshop more and more of these tests will start to pass, if you are doing things correctly.
 
-You can use the display function to display the keycode on the screen `displayMessage(e.keyCode);`
 
-Use the `keyCodeName` function you created above to display up, down, left or right on the screen using the `displayMessage` function when arrow keys are pressed.
 
-```
-body.onkeydown = function(e){
-    // this function is called when keys are pressed
-    displayMessage(keyCodeName(e.keyCode))
-};
-```
+[First function](instructions/first_functions.md)
 
 [Move the taxi](instructions/move_the_taxi.md)
 
