@@ -4,6 +4,8 @@ layout: default
 
 ## Traffic Light
 
+![](/img/traffic-lights.jpg)
+
 Now that you have the taxi moving we need to get the Traffic Light working and get the taxi's to stop at red lights.
 
 For that we are going to create a constructor function / class to control Traffic Lights, it will use the `taxiLocationCounter` counter to find the one closest to the taxi.

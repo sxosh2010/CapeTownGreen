@@ -4,6 +4,8 @@ layout: default
 
 ## Moving the taxi forward
 
+![](/img/move-the-taxi.jpg)
+
 The taxi should move forward when the right arrow is pressed. The taxi's position is determined by a class attached to it. There are nine classes: `.one-of-six` to `.six-of-nine`. Attach the next class to the taxi elements as the forward key is pressed.
 
 The algorithm you will use to move the taxi forward is:

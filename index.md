@@ -6,6 +6,8 @@ layout: default
 
 ## Introduction
 
+![](/img/introduction.jpg)
+
 Things are not well: our taxi is stuck and can't move anywhere. Commuters are getting annoyed!
 
 Can you please help by getting the Taxi to move forward? Once the Taxi is moving there is chaos as the Traffic Lights are not working. You need to fix that as well and make sure that the Taxi stops at red lights. And yes when it is green it's full steam ahead. Oh yes and we would like the taxi to be able to reverse.

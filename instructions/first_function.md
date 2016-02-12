@@ -4,6 +4,8 @@ layout: default
 
 ## First function
 
+![](/img/first-function.jpg)
+
 Write a function called `keyCodeName` in the `app.js` file.  It takes in a keycode and returns the name of the key that was pressed.
 It should support the up, down, left, and right key codes. It should return blank for all other keyCodes.
 

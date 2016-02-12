@@ -4,6 +4,8 @@ layout: default
 
 ## Passengers
 
+![](/img/passengers.jpg)
+
 Now we need some passengers at the Taxi Rank for our Taxi to pick up. Use the `passengerList` function to create a random number of passengers.
 
 Call it like this:
