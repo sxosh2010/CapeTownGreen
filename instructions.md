@@ -26,7 +26,7 @@ Install it using : `sudo npm install -g http-server`
 
 To start the web server open a terminal window change into the CapeTownGreen folder, the route folder you cloned from github and type `http-server`.
 
-Open a browser and point it to `http://localhost:8080/taxi.html` - you should see a Taxi, a tarred road and some traffic lights.
+Open a browser and point it to `http://localhost:8080/` - you should see a Taxi, a tarred road and some traffic lights.
 
 If you open `http://localhost:8080/tests.html` you should see some red text - these are failing unit tests... this indicates that some code that are required is not working as expected. As you progress through this workshop more and more of these tests will start to pass, if you are doing things correctly.
 
