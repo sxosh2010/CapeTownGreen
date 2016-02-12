@@ -7,8 +7,8 @@ The keycodes are:
 
  keycode   | key name
 -----------|-----------
-39         | forward
-37         | reverse
+39         | right
+37         | left
 38         | up
 39         | down            
 
