@@ -30,7 +30,7 @@ Open a browser and point it to `http://localhost:8080/` - you should see a Taxi,
 
 If you open `http://localhost:8080/tests.html` you should see some red text - these are failing unit tests... this indicates that some code that are required is not working as expected. As you progress through this workshop more and more of these tests will start to pass, if you are doing things correctly.
 
-[First function](instructions/first_functions.md)
+[First function](instructions/first_function.md)
 
 [Move the taxi](instructions/move_the_taxi.md)
 
