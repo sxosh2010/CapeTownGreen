@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 ## Moving the taxi forward
 
 The taxi should move forward when the forward arrow is pressed. The taxi's position is determined by a css class attached to it. There are nine classes `.one-of-six` to `.six-of-nine`. Attach the next class to the taxi elements document as the forward key is pressed.

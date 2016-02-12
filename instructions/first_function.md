@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 ## First function
 
 Write a function called `keyCodeName` in the `app.js` file.  It takes in a keycode and return the name of the key that was pressed.

@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 ## Traffic Light
 
 Now that you have the taxi moving we need to get the Traffic Light working and get the taxi's to stop at red lights.
@@ -23,18 +27,17 @@ To locate a Traffic Light in the DOM you can use the `document.querySelector` fu
 
 You can use it like this:
 
-```javascript
-
+{% highlight javascript %}
 //should return ".three-of-nine"
 var className = createTrafficLightClass(3);
 
 //get the element to use
 var trafficLightElement = document.querySelector(className);
-```
+{% endhighlight %}
 
 To change the traffic light you can add and remove css classes like this:
 
-```javascript
+{% highlight javascript %}
 // make it green
 trafficLightElement.classList.add("lights-go");
 
@@ -46,7 +49,7 @@ trafficLightElement.classList.remove("lights-slowdown");
 
 // make it red
 trafficLightElement.classList.add("lights-stop");
-```
+{% endhighlight %}
 
 Use code like this in the `makeGreen`, `makeRed` etc functions.
 
@@ -54,9 +57,9 @@ Instantiate a TrafficLight object instance in the onkeydown function using the `
 
 Here's an example:
 
-```javascript
+{% highlight javascript %}
 var trafficLight = new TrafficLight(taxiLocationCounter);
-```
+{% endhighlight %}
 
 Make the traffic light go red when pressing the up arrow an green when pressing the down arrow. As the taxi moves forward, the set of lights just in front of the taxi should be affected by the up and down arrows.
 

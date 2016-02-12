@@ -142,6 +142,11 @@ img {
   height: auto;
 }
 
+td,
+th {
+  padding: 0.2em;
+}
+
 /* layout */
 
 @media (min-width: 60em) {
