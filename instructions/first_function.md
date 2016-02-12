@@ -18,9 +18,9 @@ The keycodes are:
 
 To capture keystrokes we need to add an event handler (function) to the body of the HTML document's `onkeydown` event. Use the `keyCodeName` function you created above to display up, down, left, or right on the screen using the `displayMessage` function when arrow keys are pressed.
 
-```
+{% highlight javascript %}
 body.onkeydown = function(e){
     // this function is called when keys are pressed
     displayMessage(keyCodeName(e.keyCode))
 };
-```
+{% endhighlight %}
