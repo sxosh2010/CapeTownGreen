@@ -167,6 +167,7 @@ body {
   left: 0;
   top: -4.5em;
   font-size: 2em;
+  text-align: center;
 }
 
 .queue-second {
@@ -183,7 +184,7 @@ body {
   position: relative;
   background-color: #999;
   color: #fff;
-  margin-bottom: 0.6em;
+  margin-bottom: 0.4em;
 }
 
 .queue-count:after {
@@ -218,7 +219,7 @@ body {
   font-size: 0.5em;
   position: absolute;
   left: 0.3em;
-  bottom: -1.25em;
+  bottom: -1.5em;
   content: "R5";
 }
 
@@ -226,7 +227,7 @@ body {
   font-size: 0.5em;
   position: absolute;
   left: 0;
-  bottom: -1.25em;
+  bottom: -1.5em;
   content: "R10";
   color: rgb(72,	182, 131);
 }
@@ -235,7 +236,7 @@ body {
   font-size: 0.5em;
   position: absolute;
   left: 0;
-  bottom: -1.25em;
+  bottom: -1.5em;
   content: "R20";
   color: rgb(173, 123, 76);
 }
