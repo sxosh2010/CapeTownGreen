@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Moving the taxi forward
+# Moving the taxi forward
 
 ![](/img/move-the-taxi.jpg)
 

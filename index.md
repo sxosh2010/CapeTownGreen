@@ -41,4 +41,4 @@ If you open `http://localhost:8080/tests.html` you should see some red text: the
 
 [Get people on the taxi](instructions/passengers.html)
 
-## Group passengers into destinations
+[Group passengers into destinations](instructions/group_passengers.html)
