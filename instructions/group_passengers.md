@@ -36,4 +36,4 @@ var taxi = new Taxi(5, 20);
 
 The `Taxi` class should take care of displaying the number of passengers on the taxi.
 
-> Create a Taxi with a random capacity & fare after a taxi reached last slot. The new Taxi should be displayed in the first slot. See how long it take to transport all the passengers.
+> Create a Taxi with a random capacity & fare after a taxi reached the last slot. A new Taxi should be displayed in the first slot. See how long it take to transport all the passengers.
