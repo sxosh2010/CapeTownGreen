@@ -1,28 +1,26 @@
----
-layout: default
----
-
 ## First function
 
-![](/img/first-function.jpg)
-
-Write a function called `keyCodeName` in the `app.js` file.  It takes in a keycode and returns the name of the key that was pressed.
-It should support the up, down, left, and right key codes. It should return blank for all other keyCodes.
+Write a function called `keyCodeName` in the `app.js` file.  It takes in a keycode and return the name of the key that was pressed.
+It should support the up, down, left and right key codes. It should return blank for all other keyCodes.
 
 The keycodes are:
 
  keycode   | key name
 -----------|-----------
-39         | forward
-37         | reverse
+39         | right
+37         | left
 38         | up
 39         | down            
 
-To capture keystrokes we need to add an event handler (function) to the body of the HTML document's `onkeydown` event. Use the `keyCodeName` function you created above to display up, down, left, or right on the screen using the `displayMessage` function when arrow keys are pressed.
+To capture keystroke we need to add an event handler (function) to the body of the html document's `onkeydown` event.
 
-{% highlight javascript %}
+You can use the display function to display the keycode on the screen `displayMessage(e.keyCode);`
+
+Use the `keyCodeName` function you created above to display up, down, left or right on the screen using the `displayMessage` function when arrow keys are pressed.
+
+```
 body.onkeydown = function(e){
     // this function is called when keys are pressed
     displayMessage(keyCodeName(e.keyCode))
 };
-{% endhighlight %}
+```
