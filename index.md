@@ -41,7 +41,7 @@ If you open `http://localhost:8080/tests.html` you should see some red text: the
 
 ## Stop, Wait, Go!
 
-[First function](instructions/first_functions.html)
+[First function](instructions/first_function.html)
 
 [Move the taxi](instructions/move_the_taxi.html)
 
