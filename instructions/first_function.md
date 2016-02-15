@@ -18,17 +18,22 @@ The keycodes are:
 38         | up
 39         | down            
 
-To capture keystroke we need to add an event handler (function) to the body of the html document's `onkeydown` event.
+Test it by calling `keyCodeName(39)` in the console.
 
-You can use the display function to display the keycode on the screen `displayMessage(e.keyCode);`
+## Second function
 
-Use the `keyCodeName` function you created above to display up, down, left or right on the screen using the `displayMessage` function when arrow keys are pressed.
+To capture keystrokes we need to add an event handler (function) to the body of the html document's `onkeydown` event.
+
+Use the `keyCodeName` function you created above to display up, down, left or right in the console using the `displayMessage` function when the arrow keys are pressed.
 
 {% highlight javascript %}
-
 body.onkeydown = function(e){
-    // this function is called when keys are pressed
-    displayMessage(keyCodeName(e.keyCode))
+    // this stuff is called when keys are pressed
 };
-
 {% endhighlight %}
+
+The `e` is short for event. The code above says "When I do `onkeydown` on `body`, save the result as `e` so that I can use it later."
+
+## Third function
+
+Now let's display the message on the web page itself. Write a function to display the keycode inside `#message` on the screen. The function should like a bit like this `displayMessage(e.keyCode);`.
