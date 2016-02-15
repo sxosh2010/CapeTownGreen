@@ -10,12 +10,12 @@ The taxi should move forward when the right arrow is pressed. The taxi's positio
 
 The algorithm you will use to move the taxi forward is:
 
-    1. initialize a global variable (declare it outside `onkeyup`) called `taxiLocationCounter` to 1;
-    2. when the forward key is pressed increment `taxiLocationCounter` by 1;
-    3. when the back key is pressed decrement `taxiLocationCounter` by 1;
-    4. make sure that the counter variable never get's bigger than 9 or less than 1;
-    5. translate the counter's value into class names;
-    6. when the forward key is pressed, replace the old location class with the new location class on the taxi html element.
+1. initialize a global variable (declare it outside `onkeyup`) called `taxiLocationCounter` to 1;
+2. when the forward key is pressed increment `taxiLocationCounter` by 1;
+3. when the back key is pressed decrement `taxiLocationCounter` by 1;
+4. make sure that the counter variable never get's bigger than 9 or less than 1;
+5. translate the counter's value into class names;
+6. when the forward key is pressed, replace the old location class with the new location class on the taxi html element.
 
 Go ahead and implement steps 1 to 4. Display the value of `taxiLocationCounter` on the screen using the `displayMessage` function.
 
