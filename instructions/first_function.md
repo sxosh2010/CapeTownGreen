@@ -4,10 +4,6 @@ layout: default
 
 ![](/img/first-function.jpg)
 
-Mentions & Reactions
-Include: mentions, reactions, and user group mentions
-
-
 ## First function
 
 Write a function called `keyCodeName` in the `app.js` file.  It takes in a keycode and return the name of the key that was pressed.
