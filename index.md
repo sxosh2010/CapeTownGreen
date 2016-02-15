@@ -25,6 +25,12 @@ The DOM skills introduced are:
 * working with `classList` to manipulate styles and elements;
 * locating elements in the DOM using `getElementById` and `querySelector`.
 
+### Get the code
+
+Log in to [GitHub](http://github.org) and fork this [repository](https://github.com/codex-academy/CapeTownGreen) into your profile. Now clone your fork of this repository into your projects folder. Do all the work for this project in that folder.
+
+### Look at it
+
 You should write all your code in `app.js`.
 
 You need to install `http-server`. Install it using : `sudo npm install -g http-server`. To start the web server, open a terminal window, change into the CapeTownGreen folder (the one you cloned from GitHub) and type `http-server`.
@@ -32,6 +38,8 @@ You need to install `http-server`. Install it using : `sudo npm install -g http-
 Open a browser and point it to `http://localhost:8080/taxi.html`: you should see a Taxi, a tarred road, and some traffic lights. (`localhost` is the same as `127.0.0.1` that you'll have noticed in your terminal. The URL above is the same as `http://127.0.0.1:8080/taxi.html`)
 
 If you open `http://localhost:8080/tests.html` you should see some red text: these are failing unit tests. This indicates that some required code is not working as expected. As you progress through this workshop more and more of these tests will start to pass, if you are doing things correctly.
+
+## Stop, Wait, Go!
 
 [First function](instructions/first_functions.html)
 
@@ -41,4 +49,4 @@ If you open `http://localhost:8080/tests.html` you should see some red text: the
 
 [Get people on the taxi](instructions/passengers.html)
 
-[Group passengers into destinations](instructions/group_passengers.html)
+[Group passengers](instructions/group_passengers.html)
