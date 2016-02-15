@@ -1,3 +1,13 @@
+---
+layout: default
+---
+
+![](/img/first-function.jpg)
+
+Mentions & Reactions
+Include: mentions, reactions, and user group mentions
+
+
 ## First function
 
 Write a function called `keyCodeName` in the `app.js` file.  It takes in a keycode and return the name of the key that was pressed.
@@ -18,9 +28,11 @@ You can use the display function to display the keycode on the screen `displayMe
 
 Use the `keyCodeName` function you created above to display up, down, left or right on the screen using the `displayMessage` function when arrow keys are pressed.
 
-```
-body.onkeydown = function(e){
+{% highlight javascript %}
+
+[body.onkeydown = function(e){
     // this function is called when keys are pressed
     displayMessage(keyCodeName(e.keyCode))
 };
-```
+
+{% endhighlight %}

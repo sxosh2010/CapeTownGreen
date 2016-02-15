@@ -17,9 +17,9 @@ The algorithm you will use to move the taxi forward is:
     5. translate the counter's value into class names;
     6. when the forward key is pressed, replace the old location class with the new location class on the taxi html element.
 
-Go ahead and implement steps 1 to 4. Display the value of `taxiLocationCounter` on the screen using the `displayMessage` function. See the result of your work at http://localhost:8008/taxi.html
+Go ahead and implement steps 1 to 4. Display the value of `taxiLocationCounter` on the screen using the `displayMessage` function.
 
-### Translate counter into a classname
+## Translate counter into a classname
 
 Create a function called `createLocationClass` in `app.js`, that takes an number between 1 and 9 and returns a string as in the table below.
 
@@ -35,11 +35,11 @@ parameter  | returns          |
 8          | slot-eight-of-nine
 9          | slot-nine-of-nine
 
-Open the http://localhost:8008/tests.html page make sure the `createLocationClass` tests are passing. You need to refresh the page.
+Open the [unit test](http://localhost:8080/tests.html) page make sure the `createLocationClass` tests are passing. You need to refresh the page if you already have it open in your browser.
 
 Use the `createLocationClass` function to get the classname for the value of `taxiLocationCounter` and display it on the screen instead of the counter.
 
-### Create moveForward function
+## Create moveForward function
 
 You will now use the class names created from `taxiLocationCounter` to let the taxi move forward.
 
