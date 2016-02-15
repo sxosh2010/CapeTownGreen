@@ -27,7 +27,7 @@ The DOM skills introduced are:
 
 ### Get the code
 
-Log in to github and fork this [repository](https://github.com/codex-academy/CapeTownGreen) into your profile. Now clone your fork of this repository into your projects folder. Do all the work for this project in that folder.
+Log in to [GitHub](http://github.org) and fork this [repository](https://github.com/codex-academy/CapeTownGreen) into your profile. Now clone your fork of this repository into your projects folder. Do all the work for this project in that folder.
 
 ### Look at it
 
@@ -39,7 +39,7 @@ Open a browser and point it to `http://localhost:8080/taxi.html`: you should see
 
 If you open `http://localhost:8080/tests.html` you should see some red text: these are failing unit tests. This indicates that some required code is not working as expected. As you progress through this workshop more and more of these tests will start to pass, if you are doing things correctly.
 
-## Red, Orange, Go!
+## Stop, Wait, Go!
 
 [First function](instructions/first_functions.html)
 
