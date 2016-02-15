@@ -38,4 +38,10 @@ var displayTaxiPassengerCount = function(count){
 var displayQueueCount = function(val){
     var q = document.querySelector("#queue-five-rand");
     q.innerHTML = val;
-}
+};
+
+var moveTaxi = function(from, to) {
+    var taxi = document.querySelector('.taxi');
+    taxi.classList.remove(from);
+    taxi.classList.add(to);
+};

@@ -23,7 +23,15 @@ Our traffic light constructor function should have these functions:
 
 It should take a number as a constructor parameter which should be the current value of the `taxiLocationCounter`.
 
-Create a function similar to `createLocationClass` called `createTrafficLightClass` which take a number as a parameter and return a string like `one-of-nine` through to `nine-of-nine`.
+Create a function similar to `createLocationClass` called `createTrafficLightClass` which take a number as a parameter and return a string like `.one-of-nine` through to `.nine-of-nine`.
+
+The css classes for each color is:
+
+color   | css classname
+--------|-------------------
+red     | lights-stop
+orange  | lights-slowdown
+green   | lights-go
 
 To locate a Traffic Light in the DOM you can use the `document.querySelector` function.
 
@@ -53,7 +61,16 @@ trafficLightElement.classList.remove("lights-slowdown");
 trafficLightElement.classList.add("lights-stop");
 {% endhighlight %}
 
-Use code like this in the `makeGreen`, `makeRed`, etc functions.
+Use code like this in the `makeGreen`, `makeRed` and `makeOrange` functions.
+
+The `color` function could check what classes the element in scope has, using code like this:
+
+{% highlight javascript %}
+
+if (trafficLightElement.classList.contains("lights-slowdown"))
+    return 'orange';
+
+{% endhighlight %}
 
 Create a TrafficLight object instance in the onkeydown function using the `taxiLocationCounter` to get the TrafficLight closest to the taxi. Here's an example:
 
