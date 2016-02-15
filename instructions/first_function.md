@@ -18,9 +18,9 @@ The keycodes are:
 38         | up
 39         | down            
 
-To capture keystroke we need to add an event handler (function) to the body of the html document's `onkeydown` event.
+To capture keystroke we need to add an event handler (function) to the body of the html document's `onkeydown` event. You can use the display function to display the keycode on the screen `displayMessage(e.keyCode);`
 
-You can use the display function to display the keycode on the screen `displayMessage(e.keyCode);`
+If you open http://localhost:8080/tests.html you should see some green tests now for `keyCodeName`. If not, your code needs a bit of tweaking.
 
 Use the `keyCodeName` function you created above to display up, down, left or right on the screen using the `displayMessage` function when arrow keys are pressed.
 
