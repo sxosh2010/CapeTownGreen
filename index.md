@@ -16,6 +16,10 @@ But now the taxi is moving full steam ahead and there is no one onboard! Fix tha
 
 The last challenge is to make sure that people at the rank queue according to their budget. Our taxi's price is R5, R10 or R20 and they don't give change. Let commuters wait in queues arranged by budget. If a taxi arrives, it should take commuters from the queue that is matching it's fare price. Taxi fare prices are R5, R10, or R20. Be sure not to overload your taxi, it should have a `maxPassenger` attribute.
 
+## Clone the repository
+
+Log in to github and fork this [repository](https://github.com/codex-academy/CapeTownGreen) into your profile. Now clone your fork of this repository into your projects folder. Do all the work for this project in that folder.
+
 ## Getting this done
 
 To get all of the above done we at codeX will provide all the HTML & CSS. You need to write some JavaScript code to get the Taxi moving. It uses the skills you learned in Codecademy and we introduce some DOM manipulation skills.
@@ -41,4 +45,4 @@ If you open `http://localhost:8080/tests.html` you should see some red text: the
 
 [Get people on the taxi](instructions/passengers.html)
 
-[Group passengers into destinations](instructions/group_passengers.html)
+[Group passengers](instructions/group_passengers.html)
