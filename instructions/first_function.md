@@ -30,7 +30,7 @@ Use the `keyCodeName` function you created above to display up, down, left or ri
 
 {% highlight javascript %}
 
-[body.onkeydown = function(e){
+body.onkeydown = function(e){
     // this function is called when keys are pressed
     displayMessage(keyCodeName(e.keyCode))
 };
