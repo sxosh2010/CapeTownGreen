@@ -16,3 +16,12 @@
  		return "";
  	}
  };
+ 
+ 	var el = document.getElementById("keyCode");
+ 	if (el.addEventListener) {
+ 	        el.addEventListener("click", Function, false);
+ 	    } else {
+ 	        el.attachEvent('onclick', Function);
+ 	    }  
+
+ 	
