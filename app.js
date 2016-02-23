@@ -2,6 +2,8 @@ var body = document.querySelector("body");
 var taxiLocationCounter = 1;
 taxiLocationCounter ++;
 taxiLocationCounter --;
+
+ 
 body.onkeydown = function(e){
 
  	//e.keycodedown -will capture the key codes
@@ -9,10 +11,21 @@ body.onkeydown = function(e){
  	var keyName = keyCodeName(e.keyCode);
   	var className = createLocationClass(taxiLocationCounter);	
 	displayMessage(className);
+if(keyCodeName(e.keyCode) === "right"){
 
-	moveTaxi();
+MoveForward();
+
+
+} 
+else{
+Reverse();
+}
+
+}
+
+
  	 	
-};
+
 
 var keyCodeName = function(num){
 	if(num=== 37){
@@ -32,19 +45,6 @@ var keyCodeName = function(num){
  	}
  }
  
-
-// for(var i = 0; i < taxiLocationCounter.length; i++){
-// 	taxiLocationCounter[i]
-// };
-// 	if(keyCodeName === "right") {
-//    	taxiLocationCounter ++;
-// 	}
-
-// 	else{
-// 	taxiLocationCounter --;
-// 	};
-
-
 var createLocationClass = function(number){
 	if(number===1){
 		return  "slot-one-of-nine";
@@ -125,7 +125,7 @@ MoveForward = function(){
 var currentLocation = createLocationClass(taxiLocationCounter);
 taxiLocationCounter ++;
 var  newLocation = createLocationClass(taxiLocationCounter);
-moveTaxi(currentLocation, newLocation);
+moveTaxi(currentLocation , newLocation);
 }
 
 
@@ -133,7 +133,8 @@ moveTaxi(currentLocation, newLocation);
 Movereverse = function(){
 var currentLocationCounter = createLocationClass(taxiLocationCounter);
 taxiLocationCounter--;
-var  newlocationCounter = createLocationClass(taxiLocationCounter);
+var  newLocationCounter = createLocationClass(taxiLocationCounter);
+	moveTaxi(currentLocation , newLocation);
 }
 
 
