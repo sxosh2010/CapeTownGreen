@@ -32,15 +32,15 @@ describe("keyCodeName", function(){
 
 describe("createLocationClass", function(){
     it("should return `slot-one-of-nine` for 1", function(){
-        assert.equal("slot-one-of-nine", createLocactionClass(1));
+        assert.equal("slot-one-of-nine", createLocationClass(1));
     });
 
     it("should return `slot-five-of-nine` for 5", function(){
-        assert.equal("slot-five-of-nine", createLocactionClass(5));
+        assert.equal("slot-five-of-nine", createLocationClass(5));
     });
 
     it("should return `slot-nine-of-nine` for 9", function(){
-        assert.equal("slot-nine-of-nine", createLocactionClass(9));
+        assert.equal("slot-nine-of-nine", createLocationClass(9));
     });
 });
 
