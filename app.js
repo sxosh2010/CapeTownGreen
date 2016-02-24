@@ -7,39 +7,43 @@ taxiLocationCounter --;
 body.onkeydown = function(e){
 
  	//e.keycodedown -will capture the key codes
- 	var keyCode = e.keyCode
+ 	 var keyCode = e.keyCode
+
  	var keyName = keyCodeName(e.keyCode);
+ 	displayMessage(keyName);
   	var className = createLocationClass(taxiLocationCounter);	
 	displayMessage(className);
-if(keyCodeName(e.keyCode) === "right"){
+	
+	if(keyCodeName(e.keyCode) === "right"){
 
-MoveForward();
-
-
+moveForward();
 } 
-else{
-Reverse();
+else if(keyCodeName(e.keyCode)=== "left"){
+movereverse();
 }
+};
 
-}
+
 
 
  	 	
 
 
 var keyCodeName = function(num){
-	if(num=== 37){
+	if(num=== 39){
+	 		return "right";
+	 	}
+	  else if(num=== 37){
 	 		return "left";
 	 	}
-	  else if(num=== 39){
-	 		return "right";
+
+	 	 else if(num=== 38){
+	 		return "up";
 	 	}
 	 else if(num===40){
 	 		return "down";
 	 	}
-	 else if(num=== 38){
-	 		return "up";
-	 	}
+	
 	 else {
  		return "";
  	}
@@ -82,46 +86,46 @@ var createLocationClass = function(number){
  	}
 };
 
-// var createTrafficLightClass = function(num){
+var createTrafficLightClass = function(num){
 
-// if(num===1){
-// 	return ".one-of-nine";
-// }
+if(num===1){
+	return ".one-of-nine";
+}
 
-// if(num===2){
-// 	return ".two-of-nine";
-// }
-// if(num===3){
-// 	return ".three-of-nine";
-// }
-// if(num===4){
-// 	return ".four-of-nine";
-// }
-// if(num===5){
-// 	return ".five-of-nine";
-// }
+if(num===2){
+	return ".two-of-nine";
+}
+if(num===3){
+	return ".three-of-nine";
+}
+if(num===4){
+	return ".four-of-nine";
+}
+if(num===5){
+	return ".five-of-nine";
+}
 
-// if(num===6){
-// 	return ".six-of-nine";
-// }
-// if(num===7){
-// 	return ".seven-of-nine"
-// }
+if(num===6){
+	return ".six-of-nine";
+}
+if(num===7){
+	return ".seven-of-nine"
+}
 
-// if(num===8){
-// 	return ".eight-of-nine"
-// }
+if(num===8){
+	return ".eight-of-nine"
+}
 
-// if(num===9){
-// 	return ".nine-of-nine"
-// }
+if(num===9){
+	return ".nine-of-nine"
+}
 
 
-// }
+}
 
  
 
-MoveForward = function(){
+var moveForward = function(){
 var currentLocation = createLocationClass(taxiLocationCounter);
 taxiLocationCounter ++;
 var  newLocation = createLocationClass(taxiLocationCounter);
@@ -130,10 +134,10 @@ moveTaxi(currentLocation , newLocation);
 
 
 
-Movereverse = function(){
-var currentLocationCounter = createLocationClass(taxiLocationCounter);
+var movereverse = function(){
+var currentLocation = createLocationClass(taxiLocationCounter);
 taxiLocationCounter--;
-var  newLocationCounter = createLocationClass(taxiLocationCounter);
+var  newLocation = createLocationClass(taxiLocationCounter);
 	moveTaxi(currentLocation , newLocation);
 }
 
