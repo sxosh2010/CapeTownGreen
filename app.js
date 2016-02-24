@@ -11,9 +11,7 @@ body.onkeydown = function(e){
 
  	var keyName = keyCodeName(e.keyCode);
  	displayMessage(keyName);
-  	var className = createLocationClass(taxiLocationCounter);	
-	displayMessage(className);
-	
+  	
 	if(keyCodeName(e.keyCode) === "right"){
 
 moveForward();
@@ -21,12 +19,9 @@ moveForward();
 else if(keyCodeName(e.keyCode)=== "left"){
 movereverse();
 }
+var className = createLocationClass(taxiLocationCounter);	
+	displayMessage(className);
 };
-
-
-
-
- 	 	
 
 
 var keyCodeName = function(num){
@@ -86,6 +81,22 @@ var createLocationClass = function(number){
  	}
 };
 
+var moveForward = function(){
+var currentLocation = createLocationClass(taxiLocationCounter);
+taxiLocationCounter ++;
+var  newLocation = createLocationClass(taxiLocationCounter);
+moveTaxi(currentLocation , newLocation);
+}
+
+
+
+var movereverse = function(){
+var currentLocation = createLocationClass(taxiLocationCounter);
+taxiLocationCounter--;
+var  newLocation = createLocationClass(taxiLocationCounter);
+	moveTaxi(currentLocation , newLocation);
+}
+
 var createTrafficLightClass = function(num){
 
 if(num===1){
@@ -124,22 +135,6 @@ if(num===9){
 }
 
  
-
-var moveForward = function(){
-var currentLocation = createLocationClass(taxiLocationCounter);
-taxiLocationCounter ++;
-var  newLocation = createLocationClass(taxiLocationCounter);
-moveTaxi(currentLocation , newLocation);
-}
-
-
-
-var movereverse = function(){
-var currentLocation = createLocationClass(taxiLocationCounter);
-taxiLocationCounter--;
-var  newLocation = createLocationClass(taxiLocationCounter);
-	moveTaxi(currentLocation , newLocation);
-}
 
 
 
